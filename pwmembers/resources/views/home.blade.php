@@ -14,7 +14,10 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('ログインしました。') }}
+                    <a href="/top">
+                        ホーム画面へ
+                    </a>
                 </div>
             </div>
         </div>
