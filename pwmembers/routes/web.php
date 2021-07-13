@@ -38,3 +38,7 @@ Route::get('top', function () {
     return view('top');
 });
 
+//　フォーム画面へのルート
+Route::get('/form', function(){
+    return view('form');
+});
