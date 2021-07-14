@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Auth::routes();
@@ -38,6 +39,12 @@ Route::get('top', function () {
     return view('top');
 });
 
+<<<<<<< HEAD
 Route::get('layouts/common', function () {
     return view('layouts/common');
+=======
+//　フォーム画面へのルート
+Route::get('/form', function(){
+    return view('form');
+>>>>>>> b7d6758d2e8fd90eb47f9b27aa5d2538b5441285
 });
