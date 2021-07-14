@@ -2,22 +2,10 @@
     <html lang="ja">
     <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('/resources/js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/common.css">
 
     </head>
     <header>
@@ -44,26 +32,12 @@
 
 </div>
     <body>
-    <div class="container-flex">
-        <div class="row">
-            <div class="col-md-2 col-lg-3">
-            <div class="sidebar_fixed">
-                <div class="d-flex flex-column bg-info p-3">
-                    <h3 class="mt-3">ＭＥＮＵ</h3>
-                    <div class="p-3 m-1 bg-white">お問い合わせ</div>
-                    <div class="p-3 m-1 bg-white">ヘルプ</div>
-                    <div class="p-3 m-1 bg-white">サポート</div>
-                    <div class="p-3 m-1 bg-white">ダウンロード</div>
-                  </div>
-            </div>
-            </div>
-            <div class="col-md-10 col-lg-9 align-self-center">
+
                 <div id="contents">
+
                 @yield('content')
                 </div>
-            </div>
-        </div>
-    </div>
+
     <p></p>
     </body>
 <!-- Footer -->
