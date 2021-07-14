@@ -38,3 +38,6 @@ Route::get('top', function () {
     return view('top');
 });
 
+Route::get('layouts/common', function () {
+    return view('layouts/common');
+});
