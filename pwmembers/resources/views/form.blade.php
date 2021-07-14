@@ -7,7 +7,7 @@
 <div style="margin:50px;">
 
   <div class="form-group row">
-    <label for="select1a" class="col-sm-1 col-form-label">お問い合わせ内容</label>
+    <label for="select1a" class="col-sm-1 col-form-label">お問い合わせ種別</label>
     <div class=" col-sm-8">
     <select id="select1a" class="form-control">
       <option>不具合</option>
@@ -26,7 +26,7 @@
   </div>
 
   <div class="form-group row">
-    <label for="text1" class="col-sm-1 col-form-label">Text:</label>
+    <label for="text1" class="col-sm-1 col-form-label">お問い合わせ内容</label>
     <div class="col-sm-8">
     <input type="text" id="text1" class="form-control" style="height:200px">
     </div>
