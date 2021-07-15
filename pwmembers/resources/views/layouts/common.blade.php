@@ -32,19 +32,21 @@
 
 </div>
     <body>
+            <div class="container bg-white">
 
-                <div id="contents">
-
-                @yield('content')
+                <div class="contents bg-light border-secondary" style="padding:10px">
+                    @yield('content')
                 </div>
 
+            </div>
     <p></p>
     </body>
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="bg-light text-lg-start">
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-      © 2021 Copyright: PW members.com
+    <div class="text-center text-light p-3 bg-dark">
+      © 2020 Copyright:
+      <a class="text-light" href="https://mdbootstrap.com/">PW members.com</a>
     </div>
     <!-- Copyright -->
   </footer>
