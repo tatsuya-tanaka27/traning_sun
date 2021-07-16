@@ -43,7 +43,18 @@ Route::get('top', function () {
 Route::get('layouts/common', function () {
     return view('layouts/common');
 });
+
+//　フォーム画面系
 //　フォーム画面へのルート
 Route::get('/form', function(){
-    return view('form');
+    return view('forms/form');
 });
+//　送信成功
+Route::get('/form/success', function(){
+    return view('forms/form_success');
+});
+//　送信失敗
+Route::get('/form/failure', function(){
+    return view('forms/form_failure');
+});
+

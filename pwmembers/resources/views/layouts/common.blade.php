@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">お問い合わせ</a>
+                        <a class="nav-link" href="/form">お問い合わせ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ヘルプ/サポート</a>
