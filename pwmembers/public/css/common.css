@@ -22,32 +22,3 @@
 /* ====================================================================================================================
  * RESETS
  * ====================================================================================================================*/
-
- .sidebar_fixed {
-    position: sticky;
-    top: 60px;
-  }
-
-/*  .sidebar_content {
-    margin-bottom: 100px;
-  }
-*/
-.container-flex{
-    background-color: maroon;
-}
-.row{
-    background-color: lightpink;
-}
-.sidebar_fixed{
-         border:2px;
-         background-color: lightgoldenrodyellow;
-         width:150px;
-}
-
-#contents{
- background-color: lightskyblue;
- border:2px;
- width:350px;
- height:200px;
-    }
-

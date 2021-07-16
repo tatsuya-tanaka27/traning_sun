@@ -32,9 +32,9 @@
 
 </div>
     <body>
-            <div class="container bg-white">
+            <div class="container-fluid">
 
-                <div class="contents bg-light border-secondary" style="padding:10px">
+                <div class="contents border-secondary" style="padding: 5px">
                     @yield('content')
                 </div>
 
