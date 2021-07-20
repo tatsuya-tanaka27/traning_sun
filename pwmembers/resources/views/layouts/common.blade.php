@@ -19,10 +19,14 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/form">お問い合わせ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ヘルプ/サポート</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ヘルプ/サポート</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/help">ヘルプ</a>
+                            <a class="dropdown-item" href="#">サポート</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="#">ダウンロード</a>
                     </li>
                 </ul>

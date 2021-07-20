@@ -38,7 +38,8 @@ Route::get('/top', function(){
 Route::get('top', function () {
     return view('top');
 });
-
+//Route::get('top',[App\Http\Controllers\infoController::class, 'index'])->name('top');
+Route::get('top','App\Http\Controllers\infoController@model');
 
 Route::get('layouts/common', function () {
     return view('layouts/common');
@@ -57,4 +58,11 @@ Route::get('/form/success', function(){
 Route::get('/form/failure', function(){
     return view('forms/form_failure');
 });
+
+//ヘルプ画面
+Route::get('help', function () {
+    return view('help');
+});
+
+
 

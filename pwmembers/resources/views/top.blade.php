@@ -20,7 +20,18 @@
               <div class="col-lg-6">
                 <div class="card-body">
                   <h4 class="card-title">お知らせ</h4>
-                  <p class="card-text">PWmembersの皆様へ</p>
+
+                  <table>
+
+                      @foreach ($data as $d)
+                      <tr>
+                      　  <td class="col-lg-1">{{$d->updata_at}}</td>
+                          <td class="col-lg-5">{{$d->info_detail}}</td>
+
+                      </tr>
+                      @endforeach
+                  </table>
+
                 </div>
               </div>
             </div>
