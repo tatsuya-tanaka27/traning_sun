@@ -1,4 +1,6 @@
-<!-- お問い合わせを入力する画面 -->
+<!-- //////////////////
+     　フォーム入力画面 
+     //////////////////-->
 
 @extends('layouts.common')
 
@@ -39,7 +41,7 @@
           <div class="col-md-1"></div>
           <label for="inputPassword" class="col-md-2 col-form-label">件名</label>
           <div class="col-md-7">
-            <input class="form-control" id="">
+            <input class="form-control" id="subject" name="subject">
           </div>
           <div class="col-md-1"></div>
         </div>
@@ -49,7 +51,7 @@
           <div class="col-md-1"></div>
           <label for="text1" class="col-md-2 col-form-label">お問い合わせ内容</label>
           <div class="col-md-7">
-            <textarea class="form-control" rows="3"></textarea>
+            <textarea class="form-control" rows="3" id="text" name="text"></textarea>
           </div>
           <div class="col-sm-1"></div>
         </div>
