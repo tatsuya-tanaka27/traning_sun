@@ -1,3 +1,5 @@
+<!-- フォームの内容を送信出来なかった場合 -->
+
 @extends('layouts.common')
 
 @section('content')
