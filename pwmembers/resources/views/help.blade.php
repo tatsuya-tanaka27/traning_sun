@@ -4,6 +4,7 @@
 
         @section('content')
 
+
         <table class="table -responsive">
             <thead class="thead">
               <tr>
