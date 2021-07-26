@@ -50,6 +50,10 @@ Route::get('layouts/common', function () {
 Route::get('/form', function(){
     return view('forms/form');
 });
+//　内容確認
+Route::get('/form/check', function(){
+    return view('forms/form_check');
+});
 //　送信成功
 Route::get('/form/success', function(){
     return view('forms/form_success');
