@@ -64,5 +64,12 @@ Route::get('help', function () {
     return view('help');
 });
 
+//サポート画面
+Route::get('support', function () {
+    return view('support');
+});
 
+Route::get('layouts/error', function () {
+    return view('layouts/error');
+});
 

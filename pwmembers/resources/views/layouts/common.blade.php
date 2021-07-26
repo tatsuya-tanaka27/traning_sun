@@ -3,6 +3,11 @@
     <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- jQuery読み込み -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<!-- PopperのJS読み込み -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<!-- BootstrapのJS読み込み -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
@@ -22,8 +27,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ヘルプ/サポート</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/help">ヘルプ</a>
-                            <a class="dropdown-item" href="#">サポート</a>
+                            <a class="dropdown-item" href="/help">・ヘルプ</a>
+                            <a class="dropdown-item" href="/support">・サポート</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
