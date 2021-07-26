@@ -14,7 +14,10 @@
           <p class="card-text">@yield('error')</p>
         </div>
       </div>
-
-
+    </div>
+      <div class="text-center">
+      <p><a href="/top" class="btn btn-secondary">トップへ戻る</a></p>
+      </div>
+</div>
 
 @endsection
