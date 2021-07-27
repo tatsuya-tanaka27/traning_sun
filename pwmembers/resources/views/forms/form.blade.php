@@ -16,7 +16,8 @@
   </div>
 
   <!-- フォームrow -->
-  <form method="POST" action="">
+  <form method="POST" action="insert">
+    @csrf
     <div class="form-group row">
       <div class="col-md-1"></div>
       <div class="col-md-10">

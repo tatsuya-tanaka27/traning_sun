@@ -50,6 +50,11 @@ Route::get('layouts/common', function () {
 Route::get('/form', function(){
     return view('forms/form');
 });
+
+Route::get('post','FormController@post');
+Route::post('insert', 'FormController@create');
+
+
 //　内容確認
 Route::get('/form/check', function(){
     return view('forms/form_check');
