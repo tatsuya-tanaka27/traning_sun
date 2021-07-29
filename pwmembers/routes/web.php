@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,7 +53,7 @@ Route::get('/form', function(){
 });
 
 Route::get('post','FormController@post');
-Route::post('insert', 'FormController@create');
+Route::post('insert', 'App\Http\Controllers\FormController@insert');
 
 
 //　内容確認

@@ -60,7 +60,7 @@
         <!-- 送信ボタン -->
         <div class="form-group row">
           <div class="col-md-4"></div>
-          <button type="button" class="btn btn-info col-md-3">送　　　信</button>
+          <button type="submit" class="btn btn-info col-md-3">送　　　信</button>
         </div>
 
       </div>
