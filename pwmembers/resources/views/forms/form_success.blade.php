@@ -5,8 +5,11 @@
 @extends('layouts.common')
 
 @section('content')
+<?php
+session_start();
+?>
     <h1>
-        ◆フォーム送信成功画面建設予定地
+        ◆フォーム送信成功
     </h1>
 <div style="margin:50px;">
 
@@ -15,7 +18,12 @@
   <p>2~3営業日以内にご回答させていただきます。</p>   
 </div>
 
-<div>
+<div style="margin:50px;">
   <p>お問い合わせ内容</p>
+  <p>件名</p> 
+  <?php  echo $_SESSION['subject']; ?>
+  <p>内容</p>
+  <?php  echo $_SESSION['text'];  ?>
 </div>
+
 @endsection

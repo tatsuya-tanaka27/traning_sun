@@ -35,6 +35,12 @@ class FormController extends Controller
 
         DB::table('form')->insert($param);
 
+        session_start();
+        $_SESSION['user_id'] = Auth::user()->id;
+        $_SESSION['type'] = $request->type;
+        $_SESSION['subject'] = $request->subject;
+        $_SESSION['text'] = $request->text;
+
         return redirect('/form/success');
     }
 }
