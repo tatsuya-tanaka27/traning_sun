@@ -33,14 +33,18 @@ class FormController extends Controller
             'updated_at' => $now_time
         ];
 
+        // DBに書き込み
         DB::table('form')->insert($param);
 
+
+        // 入力情報の保持
         session_start();
         $_SESSION['user_id'] = Auth::user()->id;
         $_SESSION['type'] = $request->type;
         $_SESSION['subject'] = $request->subject;
         $_SESSION['text'] = $request->text;
 
+        // 入力成功画面への遷移
         return redirect('/form/success');
     }
 }
