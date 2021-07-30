@@ -65,4 +65,13 @@ session_start();
     </div>
   </div>
 
+  <!-- お問い合わせフォームに戻るリンク -->
+  <div class="form-group row">
+    <div class="col-md-5"></div>
+    <div>
+      <a href="/form">お問い合わせ入力画面に戻る</a>
+    </div>
+  </div>
+
+
 @endsection
