@@ -32,9 +32,6 @@ class FormController extends Controller
             'created_at' => $now_time,
             'updated_at' => $now_time
         ];
-        //DBに接続し、データを挿入
-        //DB::insert('insert into dbo.form (users_id, subjects, textes, types, statuses, created_at)
-        //            values (:user_id, :type, :subject, :text, 0, NOW())', $param);
 
         DB::table('form')->insert($param);
 

@@ -56,6 +56,7 @@ Route::get('post','FormController@post');
 Route::post('insert', 'App\Http\Controllers\FormController@insert');
 
 
+
 //　内容確認
 Route::get('/form/check', function(){
     return view('forms/form_check');

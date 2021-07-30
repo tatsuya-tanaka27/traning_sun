@@ -17,7 +17,7 @@ class CreateFormTable extends Migration
             $table->id('inquiries')->autoIncrement();
             $table->bigInteger('users_id');
             $table->string('subjects');
-            $table->string('texts');
+            $table->string('textes');
             $table->Integer('types');
             $table->Integer('statuses');
             $table->timestamps();
