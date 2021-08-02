@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class FormSendController extends Controller
 {
     //
-    public function insert(Request $request){
+    public function send(Request $request){
         // formの値を取得し、$paramに代入
         
         session_start();

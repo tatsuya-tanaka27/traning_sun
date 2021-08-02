@@ -13,11 +13,11 @@ class CreateFormTable extends Migration
      */
     public function up()
     {
-        Schema::table('form', function (Blueprint $table) {
+        Schema::create('form', function (Blueprint $table) {
             $table->id('inquiries')->autoIncrement();
             $table->bigInteger('users_id');
-            $table->string('subjects')->length(50)->change();
-            $table->string('textes');
+            $table->string('subjects')->length(50);
+            $table->string('texts');
             $table->Integer('types');
             $table->Integer('statuses');
             $table->timestamps();

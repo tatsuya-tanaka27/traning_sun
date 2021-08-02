@@ -54,7 +54,7 @@ Route::get('/form', function(){
 
 Route::get('post','FormController@post');
 Route::post('insert', 'App\Http\Controllers\FormController@insert');
-
+Route::post('/form/send', 'App\Http\Controllers\FormSendController@insert');
 
 
 //　内容確認

@@ -45,6 +45,6 @@ class FormController extends Controller
         $_SESSION['text'] = $request->text;
 
         // 入力成功画面への遷移
-        return redirect('/form/success');
+        return redirect('/form/check');
     }
 }
