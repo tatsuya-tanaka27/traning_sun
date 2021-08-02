@@ -27,7 +27,7 @@ class FormController extends Controller
             'users_id' => Auth::user()->id,
             'types' => $request->type,
             'subjects' => $request->subject,
-            'textes' => $request->text,
+            'texts' => $request->text,
             'statuses' => '0',
             'created_at' => $now_time,
             'updated_at' => $now_time

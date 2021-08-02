@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormTable extends Migration
+class RenameFormTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,17 +14,9 @@ class CreateFormTable extends Migration
     public function up()
     {
         Schema::table('form', function (Blueprint $table) {
-            $table->id('inquiries')->autoIncrement();
-            $table->bigInteger('users_id');
-            $table->string('subjects')->length(50)->change();
-            $table->string('textes');
-            $table->Integer('types');
-            $table->Integer('statuses');
-            $table->timestamps();
+            //
+            $table->renameColumn('textes','texts');
         });
-
-
-
     }
 
     /**
@@ -34,6 +26,8 @@ class CreateFormTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form');
+        Schema::table('form', function (Blueprint $table) {
+            //
+        });
     }
 }
