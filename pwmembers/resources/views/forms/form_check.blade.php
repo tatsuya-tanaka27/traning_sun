@@ -5,12 +5,9 @@
 @extends('layouts.common')
 
 @section('content')
-<h1>
-    ◆フォーム入力情報確認画面予定地
-</h1>
+
 <div style="margin:50px;">
-
-
+<form action="/form/send">
     <div class="form-group row">
 <?php session_start(); ?>
         <div class="col-md-1"></div>
@@ -57,9 +54,10 @@
         </div>
     </div>
     
-    <p>なんかいい感じの送信ボタン</p>
-
-    <button class="btn btn-info">botan</button>
-
+    <div class="form-group row">
+        <div class="col-md-5"></div>
+    <button class="btn btn-info">　送　　　信　</button>
+    </div>
+</form>
 </div>
 @endsection

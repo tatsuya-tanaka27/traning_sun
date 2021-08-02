@@ -20,22 +20,6 @@ class FormController extends Controller
 
     public function insert(Request $request){
         // formの値を取得し、$paramに代入
-        
-        $now_time = Carbon::now();
-
-        $param = [
-            'users_id' => Auth::user()->id,
-            'types' => $request->type,
-            'subjects' => $request->subject,
-            'texts' => $request->text,
-            'statuses' => '0',
-            'created_at' => $now_time,
-            'updated_at' => $now_time
-        ];
-
-        // DBに書き込み
-        DB::table('form')->insert($param);
-
 
         // 入力情報の保持
         session_start();

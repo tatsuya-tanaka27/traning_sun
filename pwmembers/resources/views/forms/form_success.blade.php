@@ -8,14 +8,18 @@
 <?php
 session_start();
 ?>
-    <h1>
-        ◆フォーム送信成功
-    </h1>
+  
 <div style="margin:50px;">
-
-  <p>{{ Auth::user()->name }} 様</p>
-  <p>お問い合わせを受け付けました。<br/></p>
+<div class="form-group row">
+  <div class="col-md-1"></div>
+  <p>{{ Auth::user()->name }} 様 　</p>
+</div>
+<div class="form-group row">
+  <div class="col-md-1"></div>
+  <p>お問い合わせを受け付けました。</p>
   <p>2~3営業日以内にご回答させていただきます。</p>   
+</div>
+</div>
 </div>
 
 <!-- お問い合わせ内容の表示 -->
