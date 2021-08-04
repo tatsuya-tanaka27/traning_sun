@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\SampleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,4 +84,10 @@ Route::get('support', function () {
 Route::get('layouts/error', function () {
     return view('layouts/error');
 });
+
+
+
+// サンプル画面
+//Route::get('sample','sampleController@index');
+Route::get('sample', [sampleController::class, 'index']);
 
